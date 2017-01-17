@@ -13,7 +13,7 @@ main =
     [ Html.text "Hello world!" ]
 
 
-buildStyle : List (List (String, String)) -> Html.Attribute
+buildStyle : List (List (String, String)) -> Html.Attribute msg
 buildStyle styleLists =
   Html.Attributes.style <| List.concat styleLists
 
